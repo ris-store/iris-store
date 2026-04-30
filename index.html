@@ -834,14 +834,7 @@
         const stored = localStorage.getItem('store_products');
         if (stored) {
             products = JSON.parse(stored);
-        } else {
-            products = [
-                { id: Date.now() + 1, name: "👜 حقيبة وردية", description: "حقيبة أنيقة بلون وردي فاتح", price: 45, image: "https://placehold.co/600x400/ffb6c1/ffffff?text=👜" },
-                { id: Date.now() + 2, name: "💄 أحمر شفاه", description: "لون طبيعي ثابت لمدة 10 ساعات", price: 18, image: "https://placehold.co/600x400/ffc0cb/ffffff?text=💄" },
-                { id: Date.now() + 3, name: "👗 فستان صيفي", description: "فستان طويل بنقوش وردية", price: 65, image: "https://placehold.co/600x400/ffd9e6/ffffff?text=👗" }
-            ];
-            saveProducts();
-        }
+        } else 
         renderProducts();
     }
     
